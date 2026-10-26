@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS event(
+  id UUID PRIMARY KEY,
+  title VARCHAR(200) NOT NULL,
+  description TEXT,
+  category VARCHAR(30) NOT NULL,
+  starts_at TIMESTAMPTZ NOT NULL,
+  ends_at TIMESTAMPTZ NOT NULL,
+  capacity INTEGER NOT NULL
+);
